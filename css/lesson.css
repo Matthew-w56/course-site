@@ -1,0 +1,335 @@
+body > div { display: inline-block; }
+img { user-select: none; }
+
+/* dovetail-mvb */
+
+/*     Heading Types and their Uses
+
+h1 - Title for the entire page (lesson)
+h2 - Heading for the Side Nav bar
+h3 - Mini section headings within lesson
+h4 - Subtitle for the entire page (lesson)
+h5 - Heading for large sections within lessons
+h6 - Final header to introduce next lesson
+
+*/
+
+h1 { /*Title for the lesson as a whole*/
+	font-size: 57px;
+	color: #222;
+}
+
+h2 { /*Heading bar for the side nav*/
+	text-align: center;
+	width:310px;
+	padding-top: 7px;
+	padding-bottom: 5px;
+	border-bottom: 1px dashed lightgray;
+	margin-bottom: 35px;
+	border-right: 1px solid lightgray;
+	border-top: 1px solid lightgray;
+	color: #222;
+}
+
+h3 { /*Used for section titles within lesson*/
+	border-bottom: 1px solid gray;
+	width: 70%;
+	padding: 5px 10px;
+	padding-left: 20px;
+	margin-top: 110px;
+	margin-bottom: 20px;
+}
+
+h3.quiz-header {background-color: var(--pri-light);}
+
+h4 { /*Subtitle for the lesson as a whole*/
+	color: #555;
+	padding: 5px;
+}
+
+h5 { /*Used for larger sections in each lesson*/
+	font-size: 45px;
+	text-align: center;
+	margin-top: 120px;
+	margin-bottom: 50px;
+}
+
+h6 { /*Final header to introduce next lesson*/
+	font-size: 35px;
+	text-align: center;
+}
+
+.side-nav {
+	width: 310px;
+	position: fixed;
+	top: 200px;
+	left: 100px;
+	top: 200px;
+	border-right: 1px solid lightgray;
+	font-size: 18px;
+	background-color: #ffffff;
+	z-index: 2;
+	border-bottom-right-radius: 1px;
+}
+
+.side-nav .spacer {
+	height: 30px;
+}
+
+.side-nav-item {
+	box-sizing: border-box;
+	display: block;
+	text-decoration: none;
+	color: var(--off-black);
+	margin-bottom: 10px;
+	user-select: none;
+	margin-left: 25px;
+	width: 80%;
+	padding-left: 5px;
+	border-left: 2px solid white;
+}
+
+.side-nav-item:hover {
+	border-left: 3px solid var(--pri);
+	color: #222;
+}
+
+.side-nav-active {
+	font-weight: bold;
+	font-size: 18.5px;
+	border-bottom: 1px solid #222;
+}
+
+.main-content {
+	display: block;
+	width: 66%;
+	margin: auto;
+	min-width: 900px;
+	padding-left: 50px !important;
+	background-color: white;
+}
+
+.intro {
+	width: 70%;
+	margin-left: 15%;
+}
+
+.lesson-content {
+	width: 70%;
+	margin-bottom: 58px;
+	margin-left: 15%;
+}
+
+.title {
+	text-align: center;
+	margin-top: 60px;
+}
+
+.title-img {
+	margin: auto !important;
+	margin-bottom: 60px !important;
+	width: fit-content !important;
+	padding-left: 60px !important;
+}
+
+.title-img img {
+	width: 500px;
+}
+
+p {
+	text-indent: 18px;
+	font-size: 21px;
+	font-family: Roboto;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+p > span {
+	font-weight: bold;
+}
+
+.math-img {
+	margin-left: 55px;
+	height: 90px;
+}
+
+.short-math-img {
+	height: 40px !important;
+}
+
+.img-wrapper {
+	width: fit-content;
+	height: fit-content;
+	margin: auto;
+}
+
+.next-lesson-wrapper {
+	position: absolute;
+	left: 0;
+	background-color: var(--pri-lighter);
+	padding-top: 0px;
+	margin-top: 50px;
+	padding: 40px 10px;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+
+.next-lesson-content {
+	width: 46.2%;
+	margin: auto;
+	margin-top: 0px;
+	padding: 10px 0;
+	height: fit-content;
+}
+
+.next-btn {
+	display: block;
+	position: static;
+	font-size: 19.5px;
+	float: right;
+	margin-right: 90px;
+}
+
+.next-lesson-spacer {
+	width: 100%;
+	height: 320px;
+}
+
+.summary {
+	text-align: center;
+}
+
+.summary > img {
+	margin-top: -13px;
+	margin-bottom: 25px;
+}
+
+/*-----[ Quizes CSS ]-----*/
+
+.quiz {
+	border: 2px solid #888;
+	min-height: 100px;
+}
+
+.quiz-state-indicator {
+	display: flex;
+	float: left;
+	width: 30px;
+	margin-left: 10px;
+	margin-bottom: 6px;
+}
+
+.quiz-head-div {
+	display: flex;
+	align-items: flex-end;
+}
+
+.quiz-body {
+	padding: 50px 30px;
+	padding-bottom: 30px;
+}
+
+.quiz-body > img {
+	display: block;
+	margin: auto;
+	margin-bottom: 36px;
+	max-width: 90%;
+}
+
+h3.quiz-header {
+	margin-top: 0px;
+	margin-bottom: -1px;
+	margin-left: 10px;
+	width: 30%;
+	min-width: 260px;
+}
+
+.quiz-choices {
+	align-content: center;
+	padding: 10px;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+.quiz-choices > p {
+	display: block;
+	width: 70%;
+	margin: 13px 20px;
+	padding: 3px 10px;
+	background-color: #f1f1f1;
+	border: 2px solid white;
+	box-shadow: inset 2px 0 0 var(--pri);
+	font-size: 22px;
+	cursor: pointer;
+	transition: box-shadow 110ms ease-out;
+	border-radius: 3px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	text-indent: 0;
+	padding-left: 29px;
+}
+
+.quiz-choices > p:hover {
+	box-shadow: inset 4px 0 0 var(--pri);
+	position: relative;
+	left: 2px;
+}
+
+.quiz-choices > p.chosen {
+	border: 2px solid var(--pri);
+	border-radius: 2px;
+	transition: border-color 150ms ease-in-out,
+				box-shadow 100ms ease-in,
+				background-color 150ms ease-in-out;
+	box-shadow: inset 0 0 0 var(--pri);
+}
+
+.js-btn {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	background-color: var(--pri);
+	color: white;
+	border: 1px solid transparent;
+	border-radius: 1px;
+	user-select: none;
+	cursor: pointer;
+	margin-left: 70%;
+	padding: 8px 16px;
+	text-indent: 0px;
+	transition: 150ms ease-out;
+}
+
+.js-btn:hover {
+	background-color: var(--pri-hover);
+	box-shadow: 0 0 0 2px white, 0 0 0 3px var(--pri);
+}
+
+.wrong { /*Used to outline incorrect answers in quizes*/
+	border-color: #DD2233 !important;
+	background-color: #e3babe !important;
+	outline: none;
+	box-shadow: none !important;
+}
+
+.wrong:hover, .final-correct:hover {
+	left: 0px !important;
+}
+
+.correct { /*Used to outline correctly answered quiz boxes*/
+	border: 2px solid var(--pri);
+	border-radius: 2px;
+}
+
+.final-correct {
+	background-color: #6fc376 !important;
+}
+
+.output-correct {
+	background-color: var(--pri-light);
+	padding: 10px 3px;
+}
+
+.hidden { /*Used to hide the submit button on a quiz that is correct*/
+	display: none;
+}

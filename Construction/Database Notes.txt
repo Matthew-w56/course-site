@@ -1,0 +1,53 @@
+
+My personal testnet logins:
+mbwilliams785@gmail.com
+mypass4?
+
+encathriopion@gmail.com
+mypass5?
+
+encath@gmail.com
+mypass6?
+
+Any of the bogusemail# emails is
+bogusemail#@gmail.com
+mypass1?
+
+
+
+Login_info:
+-Desc		VarType			FieldName	Other
+User ID 	(AI,PK) 		"id"		
+User Email 	(varchar(64))	"email"		Kept in plaintext.  Like ID, meant to be unique
+Pass Hash	(LONGTEXT)		"pass"		Salted and modified for safety
+Nonce		(INT)			"nonce"		Random number in [0,99] used in hashing the pass for cookie signin.  Changed each login.
+
+
+Things stored in the user_info table:
+-Desc		VarType			FieldName	Other
+User ID 	(AI,PK) 		"id"		
+Profile Pic	(varchar(9))	"pic"		Path to profile picture from the base root of course-site/img/profiles/
+Collision	(INT)			"coll"		See first Database note.
+First Name	(varchar(32))	"first_name"
+Last Name	(varchar(32))	"last_name"
+
+
+
+Notes on Database:
+
+-Images for profile pictures are stored in the server filesystem.  The location is /course-site/img/profiles/[HASH].
+	[HASH] signifies an 8-bit hash of their email, with a '0' on the end.  When a new one is created, it is first checked
+	to see if the new hash plus a zero exists.  If so, try with a '1', and if that's free use a 1 and incriment the
+	collision marker.  Go through this until 9 if needed, though that would statistically mean a lot more traffic than
+	this site is going to get.  This is sufficient.
+
+-Login Cookie format: ( delimeter = || )
+	[userId]||[passhash+nonce]
+
+
+Hash info:
+$pre_pend = '667ppls';
+$salt = 'FKLE89474?skjdsf..sfjj';
+
+
+

@@ -1,0 +1,36 @@
+Where I'm at now:
+-The lesson.js is in need of a fix, maybe the quiz generator in gradient-descent.php as well.
+-The idea is that the index of the answer is kept as an attribute in the answer so that it can
+  be pulled by the JS and used ot determine what error message to send the user if they got it
+  wrong.  But it isn't working, and the attribute itself isn't showing up in the object.  Fix.
+
+
+
+
+
+
+
+
+
+
+User: mbwilliams226@gmail.com
+pass: Mypass.4?
+
+
+Later:
+-Look at getting hover dropdown menus working for the NAV
+
+Items to grab from an options database: (with location of variable)
+-Length of login cookie life (in days) 	[db.php:setLoginCookie()]
+-Required password length (chars) 		[signup.php, handle-new-user.php:line85::second block in Passwords section]
+(create a method that grabs the value of a given field (pass in string) (all options in one entry?)
+
+
+
+Notes:::
+
+-Make a header that goes above the nav, then
+  center the nav and make it more minimal and flowy.
+  
+-Change the main color to blue. It's more fitting for an informational site
+

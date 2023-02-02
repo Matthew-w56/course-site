@@ -1,0 +1,64 @@
+/*
+Give hovered box an extra ring around it:
+box-shadow: 0 0 0 1px white, 0 0 0 3px blue;
+
+*/
+
+#main-nav {
+	position: fixed;
+	top: -4px;
+	width: 100%;
+	background-color: var(--nav-bg);
+	z-index: 10;
+}
+
+.icon-name {
+	box-sizing: border-box;
+	font-size: 35px;
+	font-weight: bold;
+	color: var(--off-black);
+	padding: 0px;
+	margin-top: -3px;
+	max-height: 30px;
+}
+
+.user-photo {
+	width: 50px;
+	margin: -5px 0px;
+	margin-left: 9px;
+}
+
+.logout {
+	margin: auto;
+}
+
+.nav-link {
+	border: 1px solid var(--nav-bg);
+	border-radius: 2px;
+	transition-duration: 180ms;
+	font-size: 20px;
+	margin-left: 1px;
+	margin-right: 2px;
+}
+
+.second {
+	color: var(--pri-dark);
+	border: 1px solid var(--nav-bg);
+}
+
+.nav-link.btn-primary {color: white;}
+
+.nav-link.first:hover {
+	background-color: var(--pri-hover);
+	box-shadow: 0 0 0 1px white, 0 0 0 3px var(--pri);
+}
+
+.nav-link.second:hover {
+	color: var(--pri);
+	border: 1px solid var(--pri);
+}
+
+.nav-spacer {
+	height: 100px;
+	width: 100%;
+}

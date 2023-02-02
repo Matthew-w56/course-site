@@ -1,0 +1,117 @@
+:root {
+	--nav-bg: white;
+	--pri: #3593d1;
+	--pri-light: #b1e1ff;
+	--pri-lighter: #e6f9ff;
+	--pri-hover: var(--pri-btn-hover);
+	--pri-dark: #3576a2;
+	--off-black: #333;
+	--sec: #ffd64e;
+	--sec-dark: #f5c528;
+	--sec-light: #ffe181;
+	--sec-lighter: rgb(255, 235, 170);
+}
+
+/* This is anything the user has selected */
+::selection {
+	background-color: rgb(255, 246, 184);
+	color: var(--off-black);
+}
+
+@font-face { font-family: Roboto; src: url('/course-site/css/RobotoSlab-Light.ttf');}
+
+* {
+	color: var(--off-black);
+	box-sizing: border-box;
+	font-family: Roboto;
+}
+
+h1 {font-weight: 600;}
+p {font-weight: 400;}
+
+body {min-height: 800px;}
+
+.main-content {
+	margin: auto;
+	padding: 0px !important;
+	height: fit-content;
+}
+
+.main-content div {
+	min-height: 104px;
+}
+
+.main-btn {
+	font-size: 22px;
+	padding: 7px 14px;
+	transition: 100ms ease-out;
+	border-radius: 2px;
+	margin-right: 8px;
+}
+
+.main-btn-second {
+	color: var(--pri);
+}
+
+.main-btn.btn-primary:hover {
+	background-color: var(--pri-hover);
+	box-shadow: 0 0 0 1px white, 0 0 0 3px var(--pri);
+}
+
+.main-btn-second:hover {
+	background-color: var(--pri-lighter);
+	color: var(--pri-dark);
+	border: 1px solid var(--pri);
+}
+
+.btn-white {
+	box-shadow: 0 0 0 2px white;
+}
+
+.btn-sec {
+	background-color: var(--sec);
+	color: var(--off-black);
+	border: 1px solid var(--sec-dark);
+}
+
+.btn-sec:hover {
+	background-color: var(--sec-light) !important;
+	border-color: var(--sec-dark);
+	color: var(--off-black);
+	box-shadow: 0 0 0 1px white, 0 0 0 3px var(--sec-dark) !important;
+}
+
+
+/*-------------------[Footer]---------------*/
+
+footer {
+	margin-top: 165px;
+	min-height: 400px;
+	padding: 20px;
+	padding-left: 20%;
+	background-color: rgb(128, 128, 128);
+	border-top: 3px solid var(--pri);
+}
+
+footer h3 {
+	margin-left: -8px;
+}
+
+footer * {
+	color: white;
+}
+
+footer a {
+	box-sizing: border-box;
+	color: white;
+	text-decoration: none;
+	user-select: none;
+	cursor: pointer;
+	font-size: 1.05em;
+	border-bottom: 1px dotted white;
+}
+
+footer a:hover {
+	color: white;
+	border: 1px dotted white;
+}

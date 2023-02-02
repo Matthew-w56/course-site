@@ -1,0 +1,141 @@
+img {
+	border-radius: 5px;
+}
+
+/*-----------------[Title Content]-----------*/
+
+.title-content {
+	width: 80%;
+	margin: auto;
+	margin-top: 25px;
+	padding-top: 70px;
+	padding-bottom: 90px;
+	background-color: white;
+}
+
+.title-text h1 {
+	font-size: 3.2em;
+	margin-left: -9px;
+	margin-bottom: 20px;
+}
+
+lgr {
+	font-size: 1.5em;
+}
+
+.title-text p {
+	font-size: 1.45em;
+	margin-bottom: 38px;
+}
+
+.title-img {
+	text-align: right;
+	margin-top: 17px;
+}
+
+/*-----------------[Description Bar]-----------*/
+
+.description {
+	width: 88%;
+	margin-top: 80px;
+	padding-top: 40px;
+	padding-bottom: 30px;
+	border-radius: 5px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	background-color: #eee;
+}
+
+.description-text h1 {
+	font-size: 2.95em;
+	margin-left: -5px;
+	margin-bottom: 25px;
+}
+
+.description-text p {
+	font-size: 1.23em;
+	margin-bottom: 35px;
+	max-width: 480px;
+}
+
+.description-img img {
+	margin-left: 53px;
+}
+
+/*-----------------[Track Progress Info]-----------*/
+
+.track-progress {
+	width: 85%;
+	margin-left: 15%;
+	margin-top: 85px;
+	background-color: #eee;
+	border-radius: 5px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	
+}
+
+.track-img { margin: auto; }
+
+.track-content { margin-left: 16px; }
+
+.track-content h1 {
+	font-size: 2.9em;
+	margin-bottom: 25px;
+	margin-top: 20px;
+}
+
+.track-content p {
+	font-size: 1.25em;
+	margin-bottom: 35px;
+	max-width: 480px;
+}
+
+.track-content a {
+	margin-bottom: 62px;
+}
+
+/*-----------------[Topics Banner]-----------*/
+
+.topics-box {
+	display: block;
+	margin: auto;
+	margin-top: 170px;
+	width: 50%;
+	min-width: 750px;
+	text-align: center;
+	max-width: 99.5vw !important;
+	padding: 0;
+	padding-bottom: 10px;
+	border-radius: 8px;
+	box-sizing: border-box;
+}
+
+.topics-box h1 {
+	font-size: 2.9em;
+	width: 100%;
+	margin: auto;
+	margin-top: 8px;
+	margin-bottom: 50px;
+	padding: 20px 0;
+	border-radius: 8px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom: 1px solid gray;
+}
+
+.topics-text-box {
+	width: 50%;
+	min-width: 500px;
+	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 17px;
+	font-size: 1.3em;
+}
+
+.topics-box a {
+	width: fit-content;
+	height: fit-content;
+	padding: 8px 50px;
+	margin-bottom: 40px;
+}

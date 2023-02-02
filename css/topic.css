@@ -1,0 +1,110 @@
+
+.nav-spacer {
+	height: 75px !important;
+}
+
+h1 { /*Main Title*/
+	font-size: 60px;
+	margin-top: 25px;
+}
+
+h2 { /*Title for each topic*/
+	font-size: 40px;
+	color: black !important;
+	border-bottom: 1px solid lightgray;
+	padding-bottom: 1px;
+	margin-bottom: 7px;
+}
+
+.title {
+	padding: 40px 100px;
+	margin: auto;
+	margin-bottom: 30px;
+	text-align: center;
+	background-color: var(--pri);
+}
+
+.title * {
+	color: white;
+}
+
+div.topic-banner {
+	padding: 25px 100px;
+	width: 65%;
+	margin-bottom: 35px;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #DDD;
+}
+
+div.topic-banner > p {
+	font-size: 19px;
+	margin-left: 13px;
+}
+
+div.topic-banner > a {
+	margin-left: 13px;
+	font-size: 17px;
+	padding: 5px 15px;
+}
+
+div.topic-banner > button {
+	margin-left: 10px;
+	font-size: 17px;
+	padding: 5px 15px;
+	background-color: white;
+	border: 1px solid var(--pri);
+	color: var(--off-black);
+}
+
+button:active, button:focus {
+	background-color: white !important;
+	color: var(--off-black) !important;
+}
+
+button:hover {
+	background-color: var(--pri-light) !important;
+	color: var(--pri) !important;
+}
+
+div.collapse-div {
+	width: 86%;
+	margin-left: 7%;
+	margin-top: 15px;
+	text-align: left;
+	padding: 20px 10px;
+	overflow: hidden;
+	height: fit-content !important;
+}
+
+div.collapse-div.gone {
+	display: none;
+}
+
+button.dropdown-btn {
+	padding-right: 9px !important;
+}
+
+ul {
+	list-style: none;
+	margin-bottom: -10px;
+}
+
+ul li {
+	margin-bottom: 7px;
+}
+
+ul li a {
+	font-size: 19px;
+	margin-left: -15px;
+	text-decoration: none;
+	color: var(--pri);
+}
+
+ul li a:hover {
+	text-decoration:  underline;
+}
+
+.hidden {
+	display: none !important;
+}

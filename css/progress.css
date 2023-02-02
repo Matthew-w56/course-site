@@ -1,0 +1,146 @@
+
+.nav-spacer {
+	height: 75px !important;
+}
+
+h1 { /*Main Title*/
+	font-size: 60px;
+	margin-top: 25px;
+}
+
+h2 { /*Title for each topic*/
+	font-size: 40px;
+	color: black !important;
+	margin-bottom: 8px;
+}
+
+.title {
+	padding: 40px 100px;
+	margin: auto;
+	margin-bottom: 30px;
+	text-align: center;
+	background-color: var(--pri);
+}
+
+.title * {
+	color: white;
+}
+
+div.topic-banner {
+	padding: 25px 100px;
+	padding-top: 0;
+	width: 65%;
+	margin-bottom: 35px;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #DDD;
+}
+
+div.topic-banner > p {
+	font-size: 19px;
+	margin-left: 13px;
+}
+
+div.topic-banner > a {
+	margin-left: 13px;
+	font-size: 17px;
+	padding: 5px 15px;
+}
+
+/*div.topic-finished {
+	
+}
+
+div.topic-started {
+	background-color: #ffffe2;
+}*/
+
+div.indicator-bar, div.indicator-labels {
+	display: flex;
+	float: left;
+	justify-content: space-around;
+	min-height: 0 !important;
+}
+
+div.indicator-labels {
+	border: none !important;
+	margin-top: 8px;
+}
+
+div.indicator-bar {
+	margin-bottom: 16px;
+	background-color: #F6F6F6;
+	border: 1px solid #777;
+	border-radius: 7px;
+	padding: 1px;
+}
+
+.ib3 > * {width: 33.33%;min-height: 0;}
+.ib3 {width: 80%; margin-left: 10%; margin-right: 10%;}
+.ib4 div {width: 25%;}
+.ib5 div {width: 20%;}
+.ib6 div {width: 16.66%;}
+.ib7 div {width: 14.286%;}
+
+.ib-complete {
+	background-color: #d6ffc6;
+	text-align: center;
+	padding: 10px 0;
+}
+.ib-complete * {
+	color: #d6ffc6;
+	border: none;
+	
+}
+.ib-complete:hover * {
+	color: var(--off-black);
+	transition: 300ms ease-in-out;
+}
+.ib-start {background-color: #ffffc5;}
+.ib-not {}
+
+div.indicator-bar div {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	min-width: 80px;
+	min-height: 35px;
+	max-height: 35px;
+	border-radius: 5px;
+}
+
+div.indicator-labels > div {
+	min-height: 0 !important;
+}
+
+div.indicator-labels > div > p {
+	margin-bottom: 1px;
+	margin-left: 8px;
+}
+
+/*
+
+NEXT ITEMS:
+-Make the indicators a nice design to show that
+ some of the banners are done and some are in
+ progress.  I second-guess the choice of
+ yellow to show in-progress.
+
+*/
+
+img.award-indicator {
+	position: relative;
+	top: 16px;
+	left: -77px;
+	padding: 0;
+	width: 22px;
+}
+
+.award-spacer {
+	min-height: 0px !important;
+	height: 25px;
+}
+
+.hidden {
+	display: none !important;
+}

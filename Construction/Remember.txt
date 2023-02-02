@@ -1,0 +1,7 @@
+functions.php includes a session_start();.  When it is included, no other start is necessary.
+
+emails in the database are always set to strtolower();
+
+To redirect once user is signed up or logged in, add a '?dest=[PATH]' to the url for the login / signup page
+
+Cookie name for login key is satonalog (Sat on a Log) (AKA: the user is sitting on a log-in key "they are sat on a log")
