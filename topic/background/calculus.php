@@ -39,15 +39,75 @@ $show_login = !$user_logged_in;
 			</div>
 			
 			<div class="intro">
-				<p>This is a paragaph of introduction text before the lesson really starts</p>
+				<p>
+					Derivatives are a huge part of how Machine Learning works.  So it is important that we
+					understand what they look like and what they mean.  This lesson is meant both for someone
+					who has never studied Calculus as well as for someone who has learned about derivatives but
+					might not be able to explain how they can be applied.  So for any reader, the goal of this
+					lesson is to internalize what a derivative is, what it lets us know about a function, and
+					what this knowledge allows us to achieve in the realm of Machine Learning.
+				</p>
 			</div>
 			
 			<div class="lesson-content">
-				<h3>Lesson Part Header</h3>
-				<p>This is a part of the lesson</p>
+				<h3>Basic Explaination</h3>
+				<p>
+					At the most basic level, a derivative is a function of a variable, usually x.  But this function
+					is created by using another function.  This other function could be anything.  It could be x<sup>2</sup>,
+					it could be 2x + 5, or it could be something much larger.
+				</p>
+				<p>
+					The difference between these two functions is really cool.  With any function, we give it an input
+					(a variable) and we get back an output (a y value).  With a derivative function, we give it the same
+					input, and we get back a number that represents the slope of our original function at that point.
+				</p>
 				
-				<h3>Lesson Part Header</h3>
-				<p>This is a part of the lesson using <sup>Superimposed</sup> text</p>
+				<h3>Visual Example</h3>
+				<p>To better understand what this means, let's use a specific example and see some images.  For this example,
+					our original function (which we call f(x)) will be
+				</p>
+				
+				<img class="math-img short-math-img" src="../../img/math/calc-x-square.png">
+				
+				<p>
+					And the derivativie of f(x) (which we call f'(x)) is
+				</p>
+				
+				<img class="math-img short-math-img" src="../../img/math/calc-x-square-derivative.png">
+				
+				<p>
+					The graph for these two functions looks like this:
+				</p>
+				
+				<div class="img-wrapper">
+					<img src="../../img/lesson-img/calc-derivative-example1.png" class="lesson-img">
+				</div>
+				
+				<p>
+					Here, the curved red line is our f(x), and the dotted blue line is our f'(x).  Notice
+					how when x=0, f(x) is flat.  This means that the slope at x=0 is 0.  So, accordingly,
+					our derivative function evaluates to 0 at x=0.  As we go to the right, our f'(x) gets
+					higher and higher while our f(x) gets steeper and steeper.
+				</p>
+				
+				<p>
+					Now let's say that you wanted to draw a straight line somewhere on this graph so that
+					the line touches our curved line, but only once.  It would almost go parallel to it for
+					a bit, then just barely touch it on one point.  To see an example of this kind of line,
+					see the image at the beginning of this lesson.  This line is called a tangent line.  The
+					angle of this line (or the slope) is equal to f'(x) at that point.
+				</p>
+				<p>
+					So if we were to draw a line that touched our curve at x=-2, the line would be pointing
+					downwards.  Specifically, the slope of that line would be exactly -4.  And how do we know
+					this?  Because f'(x) = 2x, and when we plug -2 in for x, we get f'(x) = -4!
+				</p>
+				
+				<h3>Great!  So what?</h3>
+				<p>
+					So we know that a derivative is a function that evaluates to the slope of the curve at a given
+					point.  That's awesome!  But what do we do with that information?
+				</p>
 				
 				<br> <!-- BR's are used for spacing here and there -->
 				

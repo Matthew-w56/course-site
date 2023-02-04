@@ -133,7 +133,11 @@ h6 { /*Final header to introduce next lesson*/
 }
 
 .title-img img {
-	width: 500px;
+	max-width: 500px;
+	max-height: 450px;
+	height: auto;
+	width: auto;
+	margin-top: 20px;
 }
 
 p {
@@ -161,6 +165,8 @@ p > span {
 	width: fit-content;
 	height: fit-content;
 	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 15px;
 }
 
 .next-lesson-wrapper {
