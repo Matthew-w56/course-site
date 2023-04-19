@@ -46,43 +46,61 @@ $show_login = !$user_logged_in;
 			</div>
 			
 			<div class="intro">
-				<p>What is gradient descent, and how does it help our models learn?  The answer lies in the basic calculus that
-					is reviewed in the previous lesson [LINK HERE], so make sure you understand that section first.  The
-					secret ingredient to what gradient descent is lies in what derivatives are, and what they mean.
+				<p>
+					Gradient Descent is the process by which Machine Learning models improve.  The process of creating
+					a new model generally includes creating a blank model that does very bad at the task
+					that it needs to do, then running some form of gradient descent many times until it is (hopefully) 
+					very good at the task it is supposed to do!
 				</p>
 			</div>
 			
 			<div class="lesson-content">
 				<h3>Recap from Calculus</h3>
 				<p>
-					The important part to understand as fully as possible is that a function's derivative at a given point is
-					the slope of the function at that point.  This means that with one point, we can know which way to go
-					to increase the function, and which way to go to decrease it.
+					To understand Gradient Descent, it is very important that you have a good mental handle on what a
+					derivative is, and how it relates to it's base function.  The sentence "A function's derivative
+					evaluates to the slope of the function at a given point" should be pretty straight-forward to you.
+					If it isn't, you can read the lesson on <a href="../background/calculus.php">Calculus</a> from the
+					Background topic section, and/or there are many good videos and resources on the internet for
+					learning more about derivatives.
 				</p>
 				
 				<h3>Now, for the Gradient part</h3>
 				<p>
 					First off, let's look at the words "gradient descent" themselves and their meanings.
-					The word <span>gradient</span> means a slope, or incline.  And <span>descent</span>, is
+					The word <span>gradient</span> means a slope, or incline.  And <span>descent</span> is
 					the act of going down something.  So, intuitively, the term Gradient Descent just refers
-					to the process of moving from a spot that leads to a lot of error for a model towards one that leads
-					to less error.  Literally moving from high error to low.
+					to the process of moving down a slope or incline.
 				</p>
 				<p>
-					Let's look at the image from above again.
+					When we talk about gradient descent in the context of machine learning, the slope or incline
+					we are talking about is the graph of a function.  As with all functions, this one takes in an
+					input and gives back an output.  The inputs that we give this function are our model, and the
+					data that we are training it on.  The output that this function gives back to us is a number
+					that represents how bad the model is.  So, the lower that number is, the better we are doing.
+				</p>
+				<p>
+					Let's look at the image from above again.  This image represents one of these functions.
 				</p>
 				<br>
 				<div class="title-img">
 					<img src="../../img/lesson-img/gradient-descent.png" class="lesson-img">
 				</div>
 				<p>
-					In this example, we have a graph where the X axis is our model's weight, and the Y axis is
-					the model's error on some training set X<sup>^</sup>.  The large red point on the graph is
-					our initial weight and the error it yields on X<sup>^</sup>, and the blue arc is the error
-					function, which is a function of our weight.  And as you can see, the dotted line is labelled
-					"Gradient".  It represents the slope of the error function at that point.  Because
-					it points downwards off to the left, we know we need to decrease the weight to achieve a lower
-					error.  These shifts are shown by the red arrows.
+					First off, the measure of how bad our model is doing is often called either the "cost", "error",
+					or sometimes even "risk".  The blue line in the image is the cost of an imaginary model on some
+					data set.  The big red ball represents where the model is right now, and the arrows represent
+					little steps that the model takes towards a lower part of the graph.
+				</p>
+				<p>
+					As mentioned before, the lower our cost is, the better the model is doing.  So as it takes steps
+					do go down the slope, the model is getting better and better at it's task.  But the question is:
+					how does the model know which way to go?
+				</p>
+
+				<h3>Derivatives Coming In</h3>
+				<p>
+					This is where we refer to derivatives.  In the image above, the dotted red line
 				</p>
 				
 				<h3>Hip Hip Hurray!</h3>
