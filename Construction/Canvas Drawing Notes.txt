@@ -1,0 +1,60 @@
+Call function after x milliseconds
+setTimeout(function, delay, .. , params, ..);
+Call function every x milliseconds
+setInterval(function, delay, .. , params, ..)
+strokeRect(x, y, width, height);  //Outlines a rectangle
+fillRect(x, y, width, height); 	//Fills a rectangle
+clearRect(x, y, width, height);	//Clears the given area (eraser?)
+
+To draw a path:
+1: beginPath();
+2: moveTo(x, y)
+3: lineTo(x, y) repeated n times
+4: fill(); or stroke();
+(lineTo can be used to draw straight lines)
+
+For circles and arcs:
+arc(x, y, radius, startAngle, endAngle, clockwise)
+arcTo(x1, y1, x2, y2, radius); More connected
+for angles, you can utilize Math.PI (all angles are radians)
+
+REUSE OF DRAWING OBJECTS
+const NAME_OF_PATH = new Path2D();
+NAME_OF_PATH.command();
+NAME_OF_PATH.command();
+Later:
+ctx.stroke(NAME_OF_PATH);
+ctx.fill(NAME_OF_PATH);
+
+COLOR:
+fillStyle = "orange";
+fillStyle = "#FF22DD";
+fillStyle = "rgb(255, 165, 0)";
+fillStyle = "rgba(255, 165, 0, 0.5)";
+strokeStyle used same as fillStyle, but for Strokes
+
+Can also set default transparency with
+ctx.globalAlpha = 0.5;
+
+Values to set for ctx
+lineWidth = value;
+lineCap = type; {butt, round, square} (butt ends with corners, square goes past end point slightly)
+lineJoin = type; {round, bevel, miter} (curved, straight line across corner, draw corner full)
+
+Dashed Lines
+setLineDash([on int, off int]); ex: [4,2]
+Can also set offset with
+lineDashOffset = value;
+
+TEXT RENDERING
+fillText(string, x, y);
+ctx.font = "10px serif";
+TEXT RENDER VALUES
+font
+textAlign = type; {start, end, left, right, center} (default is start);
+
+OTHER OPTIONS
+scale(x, y);  to make things backwards, do -1,1.  Or double, 2,2
+save(); and restore();  Good for situations like all the points are there but no line yet.
+							(can save, then draw the line, then clear then restore then draw
+							 the new line)

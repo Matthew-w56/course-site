@@ -15,6 +15,9 @@ $show_login = !$user_logged_in;
 		<title>Gradient Descent | Course Site</title>
 		<?php include_once("../../php/head-links.php"); ?>
 		<link rel="stylesheet" href="../../css/lesson.css?v=<?php echo rand(10,99); ?>">
+		<link rel="stylesheet" href="../../css/lr-demo.css">
+		<script src="../../js/linear-regression.js"></script>
+		<script src="../../js/lr-demo.js" defer></script>
 		<script src="../../js/lesson.js" defer></script>
 	</head>
 	<body>

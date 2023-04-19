@@ -1,0 +1,58 @@
+
+.lr-demo {
+	width: fit-content;
+	margin: auto;
+	margin-top: 30px;
+	user-select: none;
+	padding: 20px 50px;
+	border-top: 1px solid #888;
+	border-bottom: 1px solid #888;
+	border-radius: 4px;
+}
+
+.lr-demo-canvas {
+	border: 1px solid black;
+	width: 550px;
+	height: 300px;
+}
+
+/* Speed Adjustment slider CSS */
+
+.lr-slider {
+	appearance: none;
+	background-color: #eee;
+	border: none;
+	border-radius: 2px;
+	width: 200px;
+	margin-top: 5px;
+	height: 14px;
+	transition: .2s;
+	cursor: pointer;
+}
+
+.lr-slide-disabled {
+	background-color: #CCC;
+	cursor:inherit;
+}
+
+.lr-slide-disabled::-webkit-slider-thumb {
+	background-color: var(--pri-dark);
+}
+
+.lr-slider:hover:not(.lr-slide-disabled) {
+	border: 1px solid #999;
+}
+
+.lr-slide-label {
+	margin-top: 10px;
+}
+
+.lr-slider::-webkit-slider-thumb {
+	appearance: none;
+	width: 16px;
+	height: 20px;
+	background-color: var(--pri);
+	border-radius: 25%;
+}
+
+/* End Slider CSS */

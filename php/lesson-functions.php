@@ -59,4 +59,37 @@ function nextLessonBanner($title, $desc, $link) {
 	<?php
 }
 
+/**
+ * 
+ * NOTE TO DO NEXT: ACTUALLY MOVE THE FILES
+ * so that they are called lr-demo and are in the
+ * right places. Right now they are called Playground
+ * 
+ * Also, names are half renamed in playground.js. Make
+ * sure it works and find any missed variable names.
+ * 
+ * 
+ * To use this function, make sure to include the associated
+ * JS and CSS files to support it's usage.  These are found
+ * in the JS and CSS founders, and are called lr-demo(.js/.css)
+ * (But, first include the linear-regression model JS file in the
+ * /js/models folder)
+ */
+function linearRegressionDemo() {
+	?>
+		<div class="lr-demo shadow-sm">
+			<canvas id="lr-demo-canvas" class="lr-demo-canvas"></canvas><br>
+			<button onClick="handleStartRegressionButton();" class="">Start Regression</button>
+			<button onClick="handleStopRegressionButton();" class="d-none" id="lr-stop-btn">Stop</button>
+			<button onClick="handleResetRegressionButton();" class="">Reset</button>
+			<br>
+			<div class="lr-slidecontainer">
+				<label class="lr-slide-label">Speed</label><br>
+				<input type="range" min="1" max="5" value="3" class="lr-slider" id="lr-slider">
+				<label id="lr-slider-output">Normal</label>
+			</div>
+		</div>
+	<?php
+}
+
 ?>
