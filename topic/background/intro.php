@@ -20,7 +20,7 @@ $show_login = !$user_logged_in;
 		<?php include_once('../../php/nav.php'); ?>
 		
 		<div class="side-nav shadow-sm">
-			<h2>Background Mathmatics</h2>
+			<h2>Background Mathematics</h2>
 			<a href="#" class="side-nav-item side-nav-active">What is Machine Learning</a>
 			<a href="calculus.php" class="side-nav-item">Calculus and Derivatives</a>
 			<a href="matrix.php" class="side-nav-item">Matrix Operations</a>
@@ -31,7 +31,7 @@ $show_login = !$user_logged_in;
 			
 			<div class="title container-fluid">
 				<h1>What is Machine Learning?</h1>
-				<h4>Background Mathmatics</h4>
+				<h4>Background Mathematics</h4>
 				<br>
 			</div>
 			
@@ -59,46 +59,50 @@ $show_login = !$user_logged_in;
 				
 				<h3>Mad Lib Analogy</h3>
 				<p>
-					If you've never seen Mad Libs, here is the general idea: there are two players.  One asks the other for a list
+					If you've never seen a Mad Lib, here is the general idea: there are two players.  One asks the other for a list
 					of words fitting certain descriptions.  They might ask for a noun, two verbs, a plural noun, and a conjunction.
 					The other player gives them random words that fit that bill, and the first player fills them in on a card that
-					has written a story with a number of blanks.  One sentence might be "Bob was ____ing down the hill".  The sentence
+					has a story on it with a number of blanks.  One sentence might be "Bob was ____ing down the hill".  The sentence
 					might be filled in with any verb, such as "Bob was cooking down the hill".
 				</p>
 				<p>
-					This relates quite closely to what Machine Learning does, but with a few changes.  Instead of a story, we give the
-					ML model a function or an equation.  One of the variables in the equation is some kind of input from a dataset, and
-					the rest are variables that the model is optimizing.
+					This relates quite closely to what Machine Learning does, but with a few changes.  Instead of a story, a Machine
+					Learning model can be thought of as a math equation.  Some of the variables in the equation are some kind of input
+					from a data set, and some are variables that the model is optimizing.
 				</p>
 				<p>
-					For example, we all know the equation of a line.  It looks like this.
+					To better solidify this perspective in your mind, let's look at an equation that we are all familiar with:
+					that of a line.  The equation looks like this:
 				</p>
 				<img class="math-img short-math-img" src="../../img/math/line-equation.png">
 				<p>
-					The input here is x, and the two variables that the model can play with are m and b.  We will get into
-					how the model finds the best values for these variables later, but the idea to get from this example is
-					that Machine Learning consists of a computer finding a good filler value for a blank in an equation.
+					The input from a data set here is x, and the two variables that the model can play with are m and b.  We
+					will get into how the model finds the best values for these variables later, but the idea to get from this
+					example is that Machine Learning is a process where a computer tries to find a good filler value for the
+					blanks in an equation.
 				</p>
 				
 				<h3>Difficulties in ML</h3>
 				<p>
-					This is where the difficulties come in.  Think of the ML example of classifying photos.  What equation do you give
-					a model so that it can decide if a photo depicts a cat, a dog, or neither?  And what variables does it mess with?
-					If we don't know the answer ourselves, how can we lead an ML model to the answer that we want to find?
+					This is where the difficulties come in.  Look the example of an ML model that is meant to classify images.  What
+					equation would you use to decide if a photo depicts a cat, a dog, or neither?  And what variables would the model
+					mess with?  And in cases where we don't know the answer ourselves, how can we lead a Machine Learning model to the
+					answer that we want to find?
 				</p>
 				<p>
-					The answer lies in the magic that we call Calculus.  And, granted, not many people like doing Calculus.  But enjoying
-					the work and appreciating how it works are two separate things entirely.  Using the power of a derivative, we will see
-					how we can lead our models to the best answers possible, so that they can tell us if an image has a cat in it or not.
+					The answer lies in the magic that we call Calculus.  And, granted, not many people like doing Calculus.  But you don't have
+					to like doing the math to appreciate just how interesting and powerful the ideas behind it are.  Using the power of a
+					derivative, we will see how we can lead our models to the best values for the variables it controls, so that our models can
+					perform their tasks as well as possible.
 				</p>
 				<p>
 					But to understand how derivatives lead us to the best model possible, we need to look at what a derivative is first.
-					That is what the next lesson will cover.
+					And that is what the next lesson will cover.
 				</p>
 				
 				<?php
 					echo quiz(
-						'Using your general understanding of Machine Learning, which of these examples might be easiest to acheive with Machine Learning?',
+						'Using your general understanding of Machine Learning, which of these examples might be easiest to achieve with Machine Learning?',
 						[
 							'Creating deep fake images',
 							'Finding a dot plot\'s best-fit line',

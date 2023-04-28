@@ -75,9 +75,10 @@ $show_login = !$user_logged_in;
 				<p>
 					When we talk about gradient descent in the context of machine learning, the slope or incline
 					we are talking about is the graph of a function.  As with all functions, this one takes in an
-					input and gives back an output.  The inputs that we give this function are our model, and the
+					input and gives back an output.  The inputs that we give this function are our model and the
 					data that we are training it on.  The output that this function gives back to us is a number
-					that represents how bad the model is.  So, the lower that number is, the better we are doing.
+					that represents how bad the model is at doing it's job on the data.  So, the lower that number
+					is, the better we are doing.
 				</p>
 				<p>
 					Let's look at the image from above again.  This image represents one of these functions.
@@ -100,7 +101,7 @@ $show_login = !$user_logged_in;
 
 				<h3>Derivatives Coming In</h3>
 				<p>
-					This is where we refer to derivatives.  In the image above, the dotted red line
+					This is where we come to derivatives.  <!-- //TODO: THIS -->
 				</p>
 				
 				<h3>Hip Hip Hurray!</h3>
@@ -138,7 +139,7 @@ $show_login = !$user_logged_in;
 				
 				<p>
 					As is common in Machine Learning, the math we do doesn't include a ton of numbers.  Usually, a
-					gradient is represented by the variables that go into it, and their relation to eachother.  They
+					gradient is represented by the variables that go into it, and their relation to each other.  They
 					can look scary at first but after looking into what it all means they become much nicer.
 				</p>
 				<p>
@@ -146,7 +147,7 @@ $show_login = !$user_logged_in;
 				</p>
 				<img class="math-img" src="../../img/math/least-squares-error.png">
 				<p>
-					There are two layers to this equation.  The section within the inner-most parenthases is often
+					There are two layers to this equation.  The section within the inner-most parentheses is often
 					condensed as
 				</p>
 				<img src="../../img/math/least-squares-y-hat.png" class="math-img" style="height: 80px;">

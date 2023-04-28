@@ -161,6 +161,10 @@ p > span {
 	height: 40px !important;
 }
 
+.lesson-img {
+	margin: 20px auto;
+}
+
 .img-wrapper {
 	width: fit-content;
 	height: fit-content;

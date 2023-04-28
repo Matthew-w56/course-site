@@ -20,7 +20,7 @@ $show_login = !$user_logged_in;
 		<?php include_once('../../php/nav.php'); ?>
 		
 		<div class="side-nav shadow-sm">
-			<h2>Background Mathmatics</h2>
+			<h2>Background Mathematics</h2>
 			<a href="intro.php" class="side-nav-item">What is Machine Learning</a>
 			<a href="#" class="side-nav-item side-nav-active">Calculus and Derivatives</a>
 			<a href="matrix.php" class="side-nav-item">Matrix Operations</a>
@@ -31,7 +31,7 @@ $show_login = !$user_logged_in;
 			
 			<div class="title container-fluid">
 				<h1>Calculus and Derivatives</h1>
-				<h4>Background Mathmatics</h4>
+				<h4>Background Mathematics</h4>
 			</div>
 			
 			<div class="title-img">
@@ -50,35 +50,38 @@ $show_login = !$user_logged_in;
 			</div>
 			
 			<div class="lesson-content">
-				<h3>Basic Explaination</h3>
+				<h3>Basic Explanation</h3>
 				<p>
 					At the most basic level, a derivative is a function.  But this function is found by using another
-					function, and a process in Calculus called taking a Derivative.  This other function could be anything.
+					function, and a process in Calculus called taking a Derivative.  This base function could be anything.
 					It could be x<sup>2</sup>, it could be 2x + 5, or it could be something much less nice-looking.
 				</p>
 				<p>
-					The difference between these two functions is really cool.  With any function, we give it an input
-					(a variable) and we get back an output (a y value).  With a derivative function, we give it the same
-					input, and we get back a number that represents the slope of our original function at that point.
+					The relationship between a base function and it's derivative function is really cool.  With any
+					function, we give it an input (such as x=3) and we get back an output (such as y=9).  With a derivative
+					function, we give it the same input, and we get back a number that represents the slope of our original
+					function at that point.
 				</p>
 				
 				<h3>Visual Example</h3>
-				<p>To better understand what this means, let's use a specific example and see some images.  For this example,
-					our original function (which we call f(x)) will be
+				<p>
+					What exactly does the "slope" of a function mean?  And why does it matter?  To better illustrate it, let's
+					use a specific example and see some images.  For this example, let's say our original function (which we call
+					f(x)) is:
 				</p>
 				
-				<img class="math-img short-math-img" src="../../img/math/calc-x-square.png">
+				<img class="math-img short-math-img" style="height:45px !important" src="../../img/math/calc-x-square.png">
 				
 				<p>
-					And the derivativie of f(x) (which we call f'(x)) is
+					This means that our derivative function of f(x) (which we call f'(x)) is:
 				</p>
 				
 				<img class="math-img short-math-img" src="../../img/math/calc-x-square-derivative.png">
 				
 				<p>
-					For now, we won't worry about how we found that the derivative function is what it is.  That is better
-					taught in a Calculus class, or a longer online tutorial.  But, the graph for these two functions
-					looks like this:
+					For now, we won't worry about how we found that derivative function.  That process is better
+					taught in a Calculus class, or a longer online tutorial.  But the take-away here is to be able to
+					see the relationship between these functions.  Here is the graph of these two functions together:
 				</p>
 				
 				<div class="img-wrapper">
@@ -86,11 +89,11 @@ $show_login = !$user_logged_in;
 				</div>
 				
 				<p>
-					Here, the curved red line is our original function (or f(x)), and the dotted blue line
-					is our derivative function (or f'(x)).  Notice
-					how when x=0, f(x) is flat.  This means that the slope at x=0 is 0.  So, accordingly,
-					our derivative function evaluates to 0 at x=0.  As we go to the right, our f'(x) gets
-					higher and higher while our f(x) gets steeper and steeper.
+					Here, the curved red line is our original function (or f(x)), and the dotted blue line is our derivative
+					function (or f'(x)).  Notice how when x=0, f(x) is flat.  In other words, as the function line passes
+					through the y axis, it is moving completely horizontally.  This means that the slope at x=0 is 0.  So,
+					accordingly, our derivative function evaluates to 0 at x=0.  As we go to the right, our f'(x) gets higher
+					and higher while our f(x) gets steeper and steeper.
 				</p>
 				
 				<p>
@@ -108,14 +111,15 @@ $show_login = !$user_logged_in;
 				
 				<h3>Great!  So what?</h3>
 				<p>
-					So we know that a derivative is a function that evaluates to the slope of the curve at a given
-					point.  That's awesome!  But what do we do with that information?
+					So we know that a derivative is a function that evaluates to the slope of the base function
+					at a given point.  But what do we do with that information?
 				</p>
 				<p>
-					The answer is that we can use this information to speed up the training process for a Machine
-					Learning model so much that it's not unfair to say that without the power of derivatives, the
-					models we see today wouldn't be possible.  To see how these derivatives play into ML, see the
-					lesson on <a href="../general/gradient-descent.php">Gradient Descent</a> in the General Machine Learning topic.
+					The answer is that we can use this information to enable the training process for a Machine
+					Learning model.  Without the power of derivatives, the models we see today wouldn't be possible.
+					To see how these derivatives play into ML, see the lesson on
+					<a href="../general/gradient-descent.php">Gradient Descent</a> in the General Machine Learning topic
+					section.
 				</p>
 
 
@@ -140,13 +144,6 @@ $show_login = !$user_logged_in;
 						]
 					);
 				?>
-				
-				<h5>
-					New Section Here - Maybe the Math part?
-				</h5>
-				
-				<!-- Math Images are like this -->
-				<img class="math-img" src="../../img/math/least-squares-error.png">
 			</div> <!-- End of lesson-content -->
 			
 			
