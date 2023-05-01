@@ -28,6 +28,10 @@ h2 { /*Title for each topic*/
 	color: white;
 }
 
+.first-topic {
+	margin-top: 80px;
+}
+
 div.topic-banner {
 	padding: 25px 100px;
 	width: 65%;

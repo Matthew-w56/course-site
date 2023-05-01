@@ -14,7 +14,7 @@
 
 /* This is anything the user has selected */
 ::selection {
-	background-color: rgb(255, 246, 184);
+	background-color: rgb(252, 243, 174);
 	color: var(--off-black);
 }
 

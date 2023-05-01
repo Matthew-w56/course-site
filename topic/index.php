@@ -27,7 +27,7 @@ $show_login = !$user_logged_in;
 				</div>
 			</div>
 			
-			<div class="topic-banner container-fluid">
+			<div class="topic-banner container-fluid first-topic">
 				<h2>Background Mathmatics</h2>
 				<p>
 					Start here if you are unfamiliar with the background mathmatics that work in Machine Learning.
@@ -75,7 +75,7 @@ $show_login = !$user_logged_in;
 				<h2>Linear Regression</h2>
 				<p>
 					As the basic learning algorithm, Linear Regression is the first machine learning model that
-					we will look at how it works and how the math behind it functions.
+					we will look at.  This topic covers how it works and how the math behind it functions.
 				</p>
 				<a href="general/." class="btn btn-primary btn-sec">Start Topic</a>
 				<button class="btn btn-primary dropdown-btn" onclick="handleLessonToggle(this);">
@@ -96,8 +96,8 @@ $show_login = !$user_logged_in;
 			<div class="topic-banner container-fluid">
 				<h2>Logistic Regression</h2>
 				<p>
-					Logistic Regression is an extension of Linear Regression that allows us to perform better for a
-					different set of situations than Linear Regression is used.
+					Logistic Regression is an extension of Linear Regression that allows our prediction line
+					to have some curve to it.  This makes it better for probability-related problems.
 				</p>
 				<a href="general/." class="btn btn-primary btn-sec">Start Topic</a>
 				<button class="btn btn-primary dropdown-btn" onclick="handleLessonToggle(this);">
@@ -118,8 +118,8 @@ $show_login = !$user_logged_in;
 			<div class="topic-banner container-fluid">
 				<h2>Multivariate Regression</h2>
 				<p>
-					Putting more learned values into our models allows us to take advantage of more information at once. But, there are
-					also things to be careful about when doing it.
+					Putting more weights into our models allows us to take advantage of more information at once. This topic covers
+					how to do it, and some of the problems you run into when working with all these new weights.
 				</p>
 				<a href="general/." class="btn btn-primary btn-sec">Start Topic</a>
 				<button class="btn btn-primary dropdown-btn" onclick="handleLessonToggle(this);">
@@ -140,8 +140,8 @@ $show_login = !$user_logged_in;
 			<div class="topic-banner container-fluid">
 				<h2>Gradient Descent Variations</h2>
 				<p>
-					Many innovations in Machine Learning are improvements in how Gradient Descent is carried out.  This topic covers
-					a few of the major methods for Gradient Descent, and their pros and cons.
+					A whole host of innovations in Machine Learning are improvements in how Gradient Descent is
+					carried out.  This topic covers a few of the major methods for Gradient Descent, and their differences.
 				</p>
 				<a href="general/." class="btn btn-primary btn-sec">Start Topic</a>
 				<button class="btn btn-primary dropdown-btn" onclick="handleLessonToggle(this);">
@@ -151,7 +151,7 @@ $show_login = !$user_logged_in;
 				</button>
 				<div class="collapse-div gone">
 					<ul>
-						<li><a href="#">Lesson 1: Vanilla Descent</a></li>
+						<li><a href="#">Lesson 1: Vanilla Descent and Preview of Others</a></li>
 						<li><a href="#">Lesson 2: Stochastic Descent</a></li>
 						<li><a href="#">Lesson 3: AdaGrad</a></li>
 						<li><a href="#">Lesson 4: Momentum</a></li>
@@ -165,7 +165,7 @@ $show_login = !$user_logged_in;
 				<h2>Decision Trees</h2>
 				<p>
 					While many models attempt to fit a line to points of data, Decision Trees pack data into meaningful
-					boxes to guide predictions and classify new data points.
+					boxes to guide predictions.  This topic covers how to implement these models, and where they are best used.
 				</p>
 				<a href="general/." class="btn btn-primary btn-sec">Start Topic</a>
 				<button class="btn btn-primary dropdown-btn" onclick="handleLessonToggle(this);">
@@ -184,8 +184,8 @@ $show_login = !$user_logged_in;
 			
 			<div class="topic-banner container-fluid">
 				<h2>Neural Networks</h2>
-				<p>Neural Networks are the focus and basis for the most modern, performant models in existance today.  This
-					topic covers how they work, and the fascinating mathmatics behind them.
+				<p>Neural Networks are the focus and basis for the most modern, performant models in existence today.  This
+					topic covers how they work, and the fascinating mathematics behind them.
 				</p>
 				<a href="general/." class="btn btn-primary btn-sec">Start Topic</a>
 				<button class="btn btn-primary dropdown-btn" onclick="handleLessonToggle(this);">

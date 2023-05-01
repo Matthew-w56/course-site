@@ -5,7 +5,7 @@
 -Black text not black.  Coursera had about a #252525
 -Main page felt flowy and almost mobile design because it was all centered
 	with a good degree of margin on the sides (10%-15% each side)
--Pack things a bit tight so it feels full and competant
+-Pack things a bit tight so it feels full and competent
 -Some nav links on the top left, then log in button and sign in button to the right
 -Less obvious and sharp borders and markers are better (shadows, clean color lines with no border, etc)
 
@@ -15,7 +15,7 @@ Experience notes:
 -I want the user to be automatically redirected to the login page at times, but for it to automatically take them to their
 	original desired destination when it is done processing their new/existing account.
 -No blank account page for when not logged in.  redirect.
--Progress page either different or non-existant if not logged in.  Redirect or see promo about progress possibilities.
+-Progress page either different or non-existent if not logged in.  Redirect or see promo about progress possibilities.
 
 
 
@@ -28,7 +28,7 @@ Pages:
 	-sign in
 	-sign up
 	-log out
-	-see acount
+	-see account
 -my progress
 	-chosen topics to learn, progress in each
 
@@ -39,7 +39,7 @@ Things for the index page
 -Title
 -Subtext describing site
 -"Lessons at every level"
--Button for topics page ||OR|| signup button if not signed in
+-Button for topics page ||OR|| sign up button if not signed in
 -Background for why this page
 -Image of me?  OR of something else
 -Progress tracking page promo, link to it
@@ -57,7 +57,7 @@ were usable in anyways.  Maybe a cheat-sheet later.
 
 Topics:
 Each topic has points, each of which are lessons.  A lesson has multiple pages of content that is
-made up of text explainations, videos, images, quizes, and possibly some interactive stuff too.
+made up of text explanations, videos, images, quizzes, and possibly some interactive stuff too.
 So, it is: Topic -> Lessons -> Pages
 And pages might and might not be utilized. MAybe later for the more complicated topics
 
@@ -65,7 +65,7 @@ And pages might and might not be utilized. MAybe later for the more complicated 
 
 
 
-Background Mathmatics
+Background Mathematics
 -Machine Learning overview (what it is and isn't)
 -Derivatives / basic calculus (Short of gradient descent)
 -matrices and their operations
@@ -102,7 +102,7 @@ Multiple / Multinomial Linear and Logistic Regression
 
 
 Different methods of Gradient Descent
--Vanilla and it's pitfalls (teaser for visualizing loss functions in high dimensionalities)
+-Vanilla and it's pitfalls (teaser for visualizing loss functions in high dimensionality)
 -Stochastic - What is different about it and it's pros and cons
 -Adagrad - what it does and how that helps
 -Momentum - what it does and how it helps
@@ -113,14 +113,14 @@ Different methods of Gradient Descent
 Decision Trees
 -What it is, how it is structured, and how it classifies
 -Training (or growing) a tree
--pros and cons to decision trees (tease for ensambles and forests)
+-pros and cons to decision trees (tease for ensembles and forests)
 
 
 Vanilla Neural Networks
 -Feed Forward - intro, intuition and math
 -Back Prop - intuition and math
--Mathmatical background on how it works (more like Killian's, with his example of lines and funcs)
--Derivatives in a Neural Network (visual explaination, then a mathmatical one)
+-Mathematical background on how it works (more like Killian's, with his example of lines and funcs)
+-Derivatives in a Neural Network (visual explanation, then a mathematical one.  Think of that kid's medium post)
 -Hyperparameters of a Neural Network (layers || nodes per each layer || batch_size || epoch_count)
 
 
@@ -129,7 +129,7 @@ Vanilla Neural Networks
 
 Future content:
 support vector machines
-ensambles  (random forest || bagging)
+ensembles  (random forest || bagging)
 visualizing high-dimensional loss functions
 skip connections in neural nets
 CNNs (how convolutions work and it's derivatives)
@@ -138,38 +138,6 @@ LSTMs (how they work and how they help)
 
 
 
-
-
-
-
-
-
-
-
-
-
-Lesson Segments:
-I got carried away writing for the gradient descent segment, and
-got this that might be useful when working on the Calculus section.
-				<p>
-					The important part to understand as fully as possible is that a function's derivative at a given point is
-					literally just the slope of the function at that point.  Usually you can find this easily enough by taking
-					another point close by, drawing a line between the two, and assume that it's close enough.  But by knowing
-					the derivative function of the original function, you can find that line without having to know anything
-					about the points around you!
-				</p>
-				<p>
-					So why does this matter?
-				</p>
-				<p>
-					Knowing the slope of a function at a given point can be very powerful.  Let's say that instead of an arbitrary
-					function like in the image above, the function showed the selling price of a house, and the amount of money put
-					into repairs for that house.  If you had this chart, and you were repairing a house with the idea of selling it,
-					you wouldn't want to put money into the house, then pay a few hundred dollars to have it re-appraised to see if
-					the repair was, in fact, worth it.
-				</p>
-				<p>
-					Knowing the derivative, in this case, would 
 					
 					
 					
