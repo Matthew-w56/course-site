@@ -60,15 +60,6 @@ function nextLessonBanner($title, $desc, $link) {
 }
 
 /**
- * 
- * NOTE TO DO NEXT: ACTUALLY MOVE THE FILES
- * so that they are called lr-demo and are in the
- * right places. Right now they are called Playground
- * 
- * Also, names are half renamed in playground.js. Make
- * sure it works and find any missed variable names.
- * 
- * 
  * To use this function, make sure to include the associated
  * JS and CSS files to support it's usage.  These are found
  * in the JS and CSS founders, and are called lr-demo(.js/.css)

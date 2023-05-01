@@ -126,21 +126,22 @@ $show_login = !$user_logged_in;
 				<?php
 				//quiz($question, $answers, $correctIndex, $title='Quiz Time!', $img = '')
 					echo quiz(
-						'Quiz Question Here',
+						'Using the equations above, what would the derivative of our example function be
+						at x=6?',
 						[
-							'Answer Here',
-							'Answer Here',
-							'Answer Here',
-							'Answer Here'
+							'6',
+							'0',
+							'36',
+							'12'
 						],
-						2, //Index of correct answer
+						3, //Index of correct answer
 						'Quiz Title Here',
 						'',
 						[
-							'wrong answer feedback 1',
-							'wrong answer feedback 2',
-							'-', //Correct Answer
-							'wrong answer feedback 4'
+							'Remember to use the derivative function from the example',
+							'Not zero, try again!',
+							'x<sup>2</sup> is our original function.  Try using the derivative function.',
+							'-'
 						]
 					);
 				?>
@@ -150,24 +151,17 @@ $show_login = !$user_logged_in;
 			<?php
 				//This creates the banner for the next lesson.  Parameters are Title, Description, and full link address
 				echo nextLessonBanner(
-					'Next Lesson: Hyperparameters',
+					'Next Topic: General Machine Learning',
 					'Now that we have looked at some numbers that we let the model train, it\'s time to look into the
 						settings that we take care of ourselves.',
 					'hyperparameters.php'
 				);	
 			?>
-			
-			<!-- Summary is just information after the lesson -->
-			<div class="summary">
-				<h5>
-					Use an h5 at the beginning
-				</h5>
-				<p>
-					Anything here
-				</p>
-				<img src="../../img/math/least-squares-update-weight.png" class="math-img"><br>
-			</div>
 		</div>
-		
+
+		<div class="summary"></div>
+
+		<?php include("../../php/footer.php"); ?>
+
 	</body>
 </html>

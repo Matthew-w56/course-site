@@ -49,7 +49,7 @@ $show_login = !$user_logged_in;
 			</div>
 			
 			<div class="topic-banner container-fluid">
-				<h2>General Learning Things</h2>
+				<h2>General Machine Learning</h2>
 				<p>
 					This lesson covers the basics of a variety of topics that are the basic building blocks of machine learning models, how they
 					work, and how to evaluate them.

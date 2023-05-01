@@ -91,11 +91,10 @@ $show_login = !$user_logged_in;
 			<?php
 				//This creates the banner for the next lesson.  Parameters are Title, Description, and full link address
 				echo nextLessonBanner(
-					'Next Lesson: Hyperparameters',
-					'Now that we have looked at some numbers that we let the model train, it\'s time to look into the
-						settings that we take care of ourselves.',
-					'hyperparameters.php'
-				);	
+					'Next Lesson: Generic',
+					'Apply the description of the next lesson here',
+					'link-to-next-lesson.php'
+				);
 			?>
 			
 			<!-- Summary is just information after the lesson -->
@@ -113,5 +112,6 @@ $show_login = !$user_logged_in;
 		<?php
 			include_once("../../php/footer.php");
 		?>
+
 	</body>
 </html>
