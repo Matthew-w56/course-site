@@ -62,7 +62,7 @@
 	How big do I plan to make this site, or what all do I intend to add?
 
 	My general vision is that one day it'll have a solid set of lessons on the topics
-	lined out in the file structure and informaiton pages of the site.  Ideally, any lesson
+	lined out in the file structure and information pages of the site.  Ideally, any lesson
 	based on a topic that could make for an interactive element would have one (model
 	demo, sliders, visualizations, etc).  My goal for the site is somewhere where people
 	can come to learn the basics of ML, and come away not only with an intuitive sense
