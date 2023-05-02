@@ -97,7 +97,7 @@ $show_login = !$user_logged_in;
 				<p>
 					As mentioned before, the lower our cost is, the better the model is doing.  So as it takes steps
 					do go down the slope, the model is getting better and better at it's task.  But the question is:
-					how does the model know which way to go?
+					how does the model know which direction to go?
 				</p>
 
 				<h3>Derivatives Coming In</h3>

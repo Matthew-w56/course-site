@@ -23,7 +23,6 @@ $show_login = !$user_logged_in;
 			<h2>Background Mathematics</h2>
 			<a href="intro.php" class="side-nav-item">What is Machine Learning</a>
 			<a href="#" class="side-nav-item side-nav-active">Calculus and Derivatives</a>
-			<a href="matrix.php" class="side-nav-item">Matrix Operations</a>
 			<div class="spacer"></div>
 		</div>
 		

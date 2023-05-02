@@ -23,7 +23,6 @@ $show_login = !$user_logged_in;
 			<h2>Background Mathematics</h2>
 			<a href="#" class="side-nav-item side-nav-active">What is Machine Learning</a>
 			<a href="calculus.php" class="side-nav-item">Calculus and Derivatives</a>
-			<a href="matrix.php" class="side-nav-item">Matrix Operations</a>
 			<div class="spacer"></div>
 		</div>
 		
@@ -127,7 +126,7 @@ $show_login = !$user_logged_in;
 				//This creates the banner for the next lesson.  Parameters are Title, Description, and full link address
 				echo nextLessonBanner(
 					'Next Lesson: Calculus and Derivatives',
-					'It\'s time to look at calculus, and derivaties in particular.  What they are, and how we get them, will
+					'It\'s time to look at calculus, and derivatives in particular.  What they are, and how we get them, will
 						help us in our Machine Learning journey.',
 					'calculus.php'
 				);	

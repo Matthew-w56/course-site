@@ -14,16 +14,16 @@ box-shadow: 0 0 0 1px white, 0 0 0 3px blue;
 
 .icon-name {
 	box-sizing: border-box;
-	font-size: 35px;
+	font-size: 29px;
 	font-weight: bold;
 	color: var(--off-black);
 	padding: 0px;
 	margin-top: -3px;
-	max-height: 30px;
+	max-height: 20px;
 }
 
 .user-photo {
-	width: 50px;
+	width: 35px;
 	margin: -5px 0px;
 	margin-left: 9px;
 }
@@ -36,7 +36,7 @@ box-shadow: 0 0 0 1px white, 0 0 0 3px blue;
 	border: 1px solid var(--nav-bg);
 	border-radius: 2px;
 	transition-duration: 180ms;
-	font-size: 20px;
+	font-size: 18px;
 	margin-left: 1px;
 	margin-right: 2px;
 }

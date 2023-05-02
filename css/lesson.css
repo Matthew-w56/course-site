@@ -1,3 +1,7 @@
+body {
+	background-color: #e7e7e7;
+}
+
 body > div { display: inline-block; }
 img { user-select: none; }
 
@@ -17,6 +21,7 @@ h6 - Final header to introduce next lesson
 h1 { /*Title for the lesson as a whole*/
 	font-size: 57px;
 	color: #222;
+	padding-top: 72px;
 }
 
 h2 { /*Heading bar for the side nav*/
@@ -32,7 +37,7 @@ h2 { /*Heading bar for the side nav*/
 }
 
 h3 { /*Used for section titles within lesson*/
-	border-bottom: 1px solid gray;
+	border-bottom: 1px solid #888;
 	width: 70%;
 	padding: 5px 10px;
 	padding-left: 20px;
@@ -62,7 +67,6 @@ h6 { /*Final header to introduce next lesson*/
 .side-nav {
 	width: 310px;
 	position: fixed;
-	top: 200px;
 	left: 100px;
 	top: 200px;
 	border-right: 1px solid lightgray;
@@ -102,22 +106,25 @@ h6 { /*Final header to introduce next lesson*/
 
 .main-content {
 	display: block;
-	width: 66%;
+	width: 54%;
 	margin: auto;
+	margin-top: -70px;
 	min-width: 900px;
-	padding-left: 50px !important;
 	background-color: white;
+	box-shadow: 0px 0px 1px 0px white;
 }
 
 .intro {
-	width: 70%;
-	margin-left: 15%;
+	width: 80%;
+	margin-left: 10%;
+	padding-top: 30px;
+	margin-top: 16px;
 }
 
 .lesson-content {
-	width: 70%;
+	width: 80%;
 	margin-bottom: 58px;
-	margin-left: 15%;
+	margin-left: 10%;
 }
 
 .title {
@@ -207,6 +214,7 @@ p > span {
 .summary {
 	text-align: center;
 	min-height: 120px;
+	padding-bottom: 48px;
 }
 
 .summary > img {
