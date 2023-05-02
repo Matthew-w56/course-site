@@ -136,13 +136,15 @@ CNNs (how convolutions work and it's derivatives)
 RNNs (Why feeding previous result back in is powerful) (Vanilla)
 LSTMs (how they work and how they help)
 
+Lesson on stochastic, batch, and mini-batch descent (instead of just the update mechanics)
 
 
+
 					
 					
 					
-Next bits for Graident Descent:
--Mathmatical definition of gradient, weight, and change.  Then add in learn rate
+Next bits for Gradient Descent:
+-Mathematical definition of gradient, weight, and change.  Then add in learn rate
 -(LR is tease for Hyperparameters (next time lesson) ).
 -Gradient of weight = derivative of error with respect to weight
 -

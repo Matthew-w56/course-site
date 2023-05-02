@@ -28,10 +28,10 @@ $show_login = !$user_logged_in;
 			</div>
 			
 			<div class="topic-banner container-fluid first-topic">
-				<h2>Background Mathmatics</h2>
+				<h2>Background Mathematics</h2>
 				<p>
-					Start here if you are unfamiliar with the background mathmatics that work in Machine Learning.
-					These include basic Linear Algebra (matrix operations), and Calculus (taking derivates).
+					Start here if you are unfamiliar with the background mathematics that work in Machine Learning.
+					This mainly includes an overview lesson on what exactly Machine Learning is, and some basic Calculus intuition.
 				</p>
 				<a href="background/intro.php" class="btn btn-primary btn-sec">Start Topic</a>
 				<button class="btn btn-primary dropdown-btn" onclick="handleLessonToggle(this);">
@@ -42,8 +42,7 @@ $show_login = !$user_logged_in;
 				<div class="collapse-div gone">
 					<ul>
 						<li><a href="background/intro.php">Lesson 1: What is Machine Learning?</a></li>
-						<li><a href="background/calculus.php">Lesson 2: Calculus and Derivates</a></li>
-						<li><a href="background/matrix.php">Lesson 3: Matrix Operations</a></li>
+						<li><a href="background/calculus.php">Lesson 2: Calculus and Derivatives</a></li>
 					</ul>
 				</div>
 			</div>
@@ -51,7 +50,7 @@ $show_login = !$user_logged_in;
 			<div class="topic-banner container-fluid">
 				<h2>General Machine Learning</h2>
 				<p>
-					This lesson covers the basics of a variety of topics that are the basic building blocks of machine learning models, how they
+					This topic covers the basics of a variety of topics that are the basic building blocks of machine learning models, how they
 					work, and how to evaluate them.
 				</p>
 				<a href="general/gradient-descent.php" class="btn btn-primary btn-sec">Start Topic</a>

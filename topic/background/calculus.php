@@ -152,9 +152,10 @@ $show_login = !$user_logged_in;
 				//This creates the banner for the next lesson.  Parameters are Title, Description, and full link address
 				echo nextLessonBanner(
 					'Next Topic: General Machine Learning',
-					'Now that we have looked at some numbers that we let the model train, it\'s time to look into the
-						settings that we take care of ourselves.',
-					'hyperparameters.php'
+					'This concludes the Background Mathematics topic.  The next lesson starts the section
+					 on General Machine Learning items.  The first lesson will be on the process that models
+					 use to learn, Gradient Descent.',
+					'../general/gradient-descent.php'
 				);	
 			?>
 		</div>

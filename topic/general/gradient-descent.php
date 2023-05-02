@@ -42,7 +42,7 @@ $show_login = !$user_logged_in;
 			</div>
 			
 			<div class="title-img">
-				<img src="../../img/lesson-img/gradient-descent.png">
+				<img src="../../img/lesson-img/gradient-descent-img.jpg">
 			</div>
 			
 			<div class="intro">
@@ -77,21 +77,22 @@ $show_login = !$user_logged_in;
 					we are talking about is the graph of a function.  As with all functions, this one takes in an
 					input and gives back an output.  The inputs that we give this function are our model and the
 					data that we are training it on.  The output that this function gives back to us is a number
-					that represents how bad the model is at doing it's job on the data.  So, the lower that number
-					is, the better we are doing.
+					that represents how <span>bad</span> the model is at doing it's job on the data.  So, the lower that number
+					is, the <span>better</span> we are doing.
 				</p>
 				<p>
 					Let's look at the image from above again.  This image represents one of these functions.
 				</p>
 				<br>
 				<div class="title-img">
-					<img src="../../img/lesson-img/gradient-descent.png" class="lesson-img">
+					<img src="../../img/lesson-img/gradient-descent-img.jpg" class="lesson-img">
 				</div>
 				<p>
 					First off, the measure of how bad our model is doing is often called either the "cost", "error",
-					or sometimes even "risk".  The blue line in the image is the cost of an imaginary model on some
-					data set.  The big red ball represents where the model is right now, and the arrows represent
-					little steps that the model takes towards a lower part of the graph.
+					or sometimes even "risk".  The curved line in the image is the cost of our imaginary model on some
+					data set.  The purple circles represent where the model's weight is on the X axis, and each of the
+					circles represents this weight (or variable that our model learns) at each step of the gradient
+					descent process.  Notice how each time, it gets a little bit closer to the minimum (best spot).
 				</p>
 				<p>
 					As mentioned before, the lower our cost is, the better the model is doing.  So as it takes steps
@@ -101,7 +102,15 @@ $show_login = !$user_logged_in;
 
 				<h3>Derivatives Coming In</h3>
 				<p>
-					This is where we come to derivatives.  <!-- //TODO: THIS -->
+					The answer is: Calculus.  As mentioned in the primer lesson derivatives, the important aspect that
+					we will focus on when we talk about derivatives is that they tell you which direction the function
+					is going.  If, as you go from left to right, the function is going up, then the derivative will be
+					a positive number.  If the function is going down, the derivative will be negative.
+				</p>
+				<p>
+					And we can know this without testing any of the points around where we are, isn't that kind of
+					magical?  So by finding out which direction the function is going using it's derivative (or gradient),
+					we can choose which direction to nudge our weights.
 				</p>
 				
 				<h3>Hip Hip Hurray!</h3>
@@ -156,9 +165,9 @@ $show_login = !$user_logged_in;
 					equation for a line (y=mx+b).
 				</p>
 				<p>
-					The y hat is the model's prediction.  It generates this prediction by taking
-					the input (x<sub>i</sub>) and multiplying it by the weight (pronounced "theta"), then adding the
-					bias (pronounced "beta").
+					This part of the equation (often called "y hat") is the model's prediction.  It generates this
+					prediction by taking the input (x<sub>i</sub>) and multiplying it by the weight (pronounced "theta"),
+					then adding the bias (pronounced "beta").
 				</p>
 				<p>
 					Using y hat as a substitute, we get
@@ -212,7 +221,7 @@ $show_login = !$user_logged_in;
 				<p>
 					What you might have noticed this far is that we have been solving for the derivative of the error function
 					with respect to theta, but we have completely ignored beta!  Beta is another number that we will be adjusting
-					as our model learns, so what is it's derivative?  If you want you can read back through the last section, and
+					as our model learns, so what is its derivative?  If you want, you can read back through the last section and
 					try to figure out what it should be for beta before reading ahead and seeing the answer.
 				</p>
 				<p>
@@ -220,7 +229,7 @@ $show_login = !$user_logged_in;
 				</p>
 				<img src="../../img/math/least-squares-error.png" class="math-img">
 				<p>
-					Because beta sits in the same set of parenthases as theta, we can reuse a few steps of math from last time.
+					Because beta sits in the same set of parentheses as theta, we can reuse a few steps of math from last time.
 					Namely, we can assume the same power rule applies here which, after reducing, left us with this.
 				</p>
 				<img src="../../img/math/least-squares-factored-1.png" class="math-img">
@@ -235,7 +244,7 @@ $show_login = !$user_logged_in;
 					with some sort of input is often the derivative of it's corresponding bias, multiplied by it's input.
 				</p>
 				<p>
-					And the practice of reusing math, or computation, comes back in a big way once we get to Neural Networks.  But for now
+					The practice of reusing math, or computation, comes back in a big way once we get to Neural Networks.  But for now
 					we have saved some extra work, and we got to the derivatives of a model that uses Least Squares Error.
 				</p>
 				
@@ -257,8 +266,10 @@ $show_login = !$user_logged_in;
 					Do we want to add, or subtract the gradient from the current weight?
 				</p>
 				<p>
-					Well, the goal is to reduce error, but the gradient describes the slope of the error function.  So if we add it, we will
-					see a higher error next time, because that's what a gradient is.  But, if we subtract it, we will see a lower error next time.
+					Well, the goal is to reduce error. But, the gradient describes the slope of the error function, which can be thought of as
+					the direction in which the function is increasing.  If the function is going up to the right, its derivative will be 
+					positive.  And if the function is going up to the left, its derivative will be negative.  So if we add it, we will
+					see a <span>higher</span> error next time.  So, we <span>subtract</span> the gradient to <span>lower</span> the error (or cost).
 				</p>
 				<p>
 					Another side detail to keep in mind is that subtracting the gradient itself is way too big of a change.  Making gradient steps
@@ -266,7 +277,7 @@ $show_login = !$user_logged_in;
 					started.
 				</p>
 				<p>
-					Here is an example of where updating the weight leads to when the changes we make are too large.
+					Here is an example of where updating the weight with too big of steps leads to higher and higher error.
 				</p>
 				<div class="img-wrapper">
 					<img src="../../img/lesson-img/gradient-large-step.png" style="width: 400px;">
@@ -278,16 +289,16 @@ $show_login = !$user_logged_in;
 					it should be.
 				</p>
 				<p>
-					This occurance is called divergence, or we say that the gradient is diverging.  So we multiply the gradient by a very small number
-					(let's say, 0.01) to keep the steps managable.
+					When this happens we call it divergence, or we say that the gradient is diverging.  So we multiply the gradient by a very small
+					number (let's say, 0.01) to keep the steps manageable.  This small number is called our <span>learning rate</span>
 				</p>
 				
 				<h3>
 					Update Equation
 				</h3>
 				<p>
-					Every time we want to update our weight or bias, we will do these two equations.  Each of these model the effect of multiplying
-					the gradients by a small number (represented as gamma) and subtracting them from their corresponding weight or bias.
+					Every time we want to update our weight or bias, we will use these two equations.  What these are doing is they are multiplying
+					the gradients by the learning rate (represented as gamma) and subtracting them from the weight and bias respectively.
 				</p>
 				<img src="../../img/math/least-squares-update-weight.png" class="math-img"><br>
 				<img src="../../img/math/least-squares-update-bias.png" class="math-img" style="margin-top: 10px;">
