@@ -26,7 +26,7 @@ $show_login = !$user_logged_in;
 		<div class="side-nav shadow-sm">
 			<h2>General ML</h2>
 			<a href="#" class="side-nav-item side-nav-active">Gradient Descent</a>
-			<a href="#" class="side-nav-item">Hyperparameters</a>
+			<a href="hyperparameters.php" class="side-nav-item">Hyperparameters</a>
 			<a href="#" class="side-nav-item">Evaluating a Model</a>
 			<a href="#" class="side-nav-item">Evaluation cont.</a>
 			<a href="#" class="side-nav-item">Comparing Models</a>
@@ -333,8 +333,8 @@ $show_login = !$user_logged_in;
 			<?php
 				echo nextLessonBanner(
 					'Next Lesson: Hyperparameters',
-					'Now that we have looked at some numbers that we let the model train, it\'s time to look into the
-						settings that we take care of ourselves.',
+					'Now that we have seen how our model adjusts some of the variables in the equation it
+					uses, the next lesson will go over the things that we still have to set ourselves.',
 					'hyperparameters.php'
 				);	
 			?>

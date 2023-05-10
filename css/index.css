@@ -40,6 +40,7 @@ lgr {
 	margin-top: 80px;
 	padding-top: 40px;
 	padding-bottom: 30px;
+	padding-left: 5px;
 	border-radius: 2px;
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
@@ -58,8 +59,11 @@ lgr {
 	max-width: 480px;
 }
 
-.description-img img {
+.description-img {
 	margin-left: 53px;
+	display: flex;
+	justify-content: center;
+	padding-right: 0;
 }
 
 /*-----------------[Track Progress Info]-----------*/

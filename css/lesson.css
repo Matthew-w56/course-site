@@ -1,5 +1,5 @@
 body {
-	background-color: #e7e7e7;
+	background-color: #F2F2F2;
 }
 
 body > div { display: inline-block; }
@@ -34,6 +34,7 @@ h2 { /*Heading bar for the side nav*/
 	border-right: 1px solid lightgray;
 	border-top: 1px solid lightgray;
 	color: #222;
+	background-color: var(--sec);
 }
 
 h3 { /*Used for section titles within lesson*/
@@ -62,6 +63,10 @@ h5 { /*Used for larger sections in each lesson*/
 h6 { /*Final header to introduce next lesson*/
 	font-size: 35px;
 	text-align: center;
+}
+
+.rounded-img {
+	border-radius: 5px;
 }
 
 .side-nav {
@@ -111,7 +116,7 @@ h6 { /*Final header to introduce next lesson*/
 	margin-top: -70px;
 	min-width: 900px;
 	background-color: white;
-	box-shadow: 0px 0px 1px 0px white;
+	box-shadow: 0px 0px 1px 0px gray;
 }
 
 .intro {
@@ -182,7 +187,7 @@ p > span {
 .next-lesson-wrapper {
 	position: absolute;
 	left: 0;
-	background-color: var(--pri-lighter);
+	background-color: var(--sec-light);
 	padding-top: 0px;
 	margin-top: 50px;
 	padding: 40px 10px;
